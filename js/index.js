@@ -120,11 +120,11 @@ alert("no encontrado login ");
 
 var viniinterval=true;
 function secintervalo(){
-  if(viniinterval){
-    viniinterval=false;
+ // if(viniinterval){
+   // viniinterval=false;
 setTimeout(cuenta_atras, 3000);
 
-}
+//}
 }
 
 function cuenta_atras(){
