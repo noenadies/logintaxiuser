@@ -32,7 +32,7 @@
         <input type="checkbox" name="rememberme" id="remember" value="Remember">
         <label class="checkbox"></label>
       </div>
-      <label for="remember">Remember me for 14 days</label>
+      <label id "idlabel" for="remember">Remember me for 14 days</label>
     </div>
     <input class="loginLoginValue" type="hidden" name="service" value="login" />
   </div>
@@ -51,9 +51,9 @@ var vndhijo="uno";
    function showAndroidToast(st1,st2,st3,st4) {
 
     vid=st1;
-    alert("padre "+st2);
-    //   vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
- //document.getElementById("demo").innerHTML = vreturn;
+    //alert("padre "+st2);
+   var vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
+ document.getElementById("idlabel").innerHTML = vreturn;
 }
    </script>
 
