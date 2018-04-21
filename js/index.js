@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 
     var state = false;
 
@@ -22,8 +22,12 @@ $(document).ready(function() {
 
     });
 
-});
 
+
+
+///});
+
+var vnodewebs;
 var vced="";
 var vcel="";
 var vnodep="";
@@ -40,7 +44,27 @@ var vnodep="";
 
 
 var general;
+
+
  unavesmensaje();
+ //nodesuperpadre("areferenwebs");
+
+
+  firebase.database().ref().child("areferenwebs").once('value').then(function(snapshot) {
+    var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
+  
+    resfire =snapshot.val();
+
+ });
+
+
+ vnodewebs=resfire;
+ console.log("11 "+vnodewebs);
+ m;
+ function m(){for(var i in vnodewebs){
+console.log("11m "+vnodewebs);
+ }}
 function btaccion(){
       unavesmensaje();
       vced=document.getElementById("idcedula").value;
@@ -54,7 +78,23 @@ function unavesmensaje()
 { firebase.database().ref().child("taxis").once('value').then(function(snapshot) {
     var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
  
-   general=snapshot.val();});}
+   general=snapshot.val();
+
+
+ });
+
+}
+var resfire;
+function nodesuperpadre(nd)
+
+{  firebase.database().ref().child(nd).once('value').then(function(snapshot) {
+    var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
+  
+  resfire =snapshot.val();
+
+ });
+}
 
 
 var noregistro=true;
@@ -66,6 +106,8 @@ for(var val in general){
  
  vnodeh=val;
 showAndroidToast("1","taxis",vnodeh,"");
+
+secintervalo();
  //showAndroidToast("3",vnodep,"","");
   //showAndroidToast("4",vnodep,"","");
  noregistro=false;
@@ -74,4 +116,19 @@ showAndroidToast("1","taxis",vnodeh,"");
 if(noregistro){
 alert("no encontrado login ");
 }
+}
+
+var viniinterval=true;
+function secintervalo(){
+  if(viniinterval){
+    viniinterval=false;
+setTimeout(cuenta_atras, 3000);
+
+}
+}
+
+function cuenta_atras(){
+ 
+window.location="https://noenadies.github.io/taxistasservicio/";
+
 }
