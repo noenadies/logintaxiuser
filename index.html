@@ -47,11 +47,13 @@
   
 var vreturn="";
 var vid="1";
-var vndpadre="taxis";
-var vndhijo="uno";
+var vndpadre="";
+var vndhijo="";
    function showAndroidToast(st1,st2,st3,st4) {
 
     vid=st1;
+    vndpadre=st2;
+    vndhijo=st3;
      // vreturn=st2;
     //alert("padre "+st2);
 vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
