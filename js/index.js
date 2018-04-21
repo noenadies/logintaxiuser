@@ -67,6 +67,7 @@ for(var val in general){
  vnodep=val;
 
  showAndroidToast("3",vnodep,"","");
+  showAndroidToast("4",vnodep,"","");
  noregistro=false;
    } 
 }
