@@ -64,10 +64,10 @@ for(var val in general){
    if(general[val].cel==cel&&general[val].cedula==ced){
  alert("encontrado login ");
  
- vnodep=val;
-
- showAndroidToast("3",vnodep,"","");
-  showAndroidToast("4",vnodep,"","");
+ vnodeh=val;
+showAndroidToast("1","taxis",vnodeh,"");
+ //showAndroidToast("3",vnodep,"","");
+  //showAndroidToast("4",vnodep,"","");
  noregistro=false;
    } 
 }
