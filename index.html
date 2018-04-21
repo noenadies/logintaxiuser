@@ -33,6 +33,7 @@
         <label class="checkbox"></label>
       </div>
       <label id ="idlabel" for="remember">Remember me for 14 days</label>
+      <label id ="idlabel2" for="remember">Remember me for 14 days</label>
     </div>
     <input class="loginLoginValue" type="hidden" name="service" value="login" />
   </div>
@@ -54,7 +55,8 @@ var vndhijo="uno";
      // vreturn=st2;
     //alert("padre "+st2);
 vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
- document.getElementById("idlabel").innerHTML = vreturn;
+if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
+ document.getElementById("idlabel2").innerHTML = vreturn;}
 } 
    </script>
 
