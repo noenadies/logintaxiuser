@@ -39,6 +39,7 @@
   </div>
   <p class="p-container">
     <input type="submit" name="Login" id="go" value="Authorize" onclick="btaccion()">
+     <input type="submit" name="Login" id="go" value="Authorize" onclick="btaccionuser()">
 </form>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
@@ -56,7 +57,10 @@ var vndhijo="";
     vndhijo=st3;
      // vreturn=st2;
     //alert("padre "+st2);
-vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
+    if(vid=="1"){
+vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);}
+   if(vid=="btaccionuser"){
+vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);}
 if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
  document.getElementById("idlabel2").innerHTML = vreturn;}
 } 
