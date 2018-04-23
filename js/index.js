@@ -74,12 +74,12 @@ vcel=document.getElementById("idcelular").value;
    showAndroidToast("btaccionuser","","","");
         if(vcel===""&&""===vced&&vndhijo!==""){
  
-  alert(vcel);
+
   btaccionuser();
 }else{
-      validadcionuser(vcel,vced)}
+      }
     }
-
+validadcionuser(vcel,vced);
    // alert(vced+" "+ vcel);
 }
 
