@@ -70,7 +70,7 @@ function btaccion(){
       vced=document.getElementById("idcedula").value;
 vcel=document.getElementById("idcelular").value;
 
-if(vcel===""&&""===vced){
+if(vcel===""&&""===vced&&vndhijo!==""){
   alert(vcel);
   btaccionuser();
 }else{
