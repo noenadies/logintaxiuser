@@ -60,9 +60,10 @@ var vndhijo="";
     //alert("padre "+st2);
     if(vid=="1"){
 vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);
-vndhijo=vreturn;}
+}
    if(vid=="btaccionuser"){
-vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);}
+vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);vndhijo=vreturn;
+document.getElementById("idlabel").innerHTML = vreturn;}
 if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
  document.getElementById("idlabel2").innerHTML = vreturn;}
 } 
