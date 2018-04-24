@@ -72,7 +72,7 @@ vcel=document.getElementById("idcelular").value;
       validadcionuser(vcel,vced);
 
 if(vced=="" && vcel=="" && vndhijo!=""){}
-    alert(4444);
+    setTimeout(cuenta_atras, 3000);
 }
 
 function unavesmensaje()
