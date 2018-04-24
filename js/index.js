@@ -70,7 +70,7 @@ function btaccion(){
       vced=document.getElementById("idcedula").value;
 vcel=document.getElementById("idcelular").value;
       validadcionuser(vcel,vced);
-      if(vced===""&&""=== vcel){
+      if(vced=="" && vcel=="" ){
            btaccionuserq()
       }
 
@@ -136,8 +136,8 @@ window.location="https://noenadies.github.io/taxistasservicio/";
 
 }
 function btaccionuserq(){
-//showAndroidToast("btaccionuser","","","");
+showAndroidToast("btaccionuser","","","");
 
-//setTimeout(cuenta_atras, 3000);
+setTimeout(cuenta_atras, 3000);
 }
 }
