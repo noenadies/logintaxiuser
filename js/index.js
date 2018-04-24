@@ -70,11 +70,9 @@ function btaccion(){
       vced=document.getElementById("idcedula").value;
 vcel=document.getElementById("idcelular").value;
       validadcionuser(vcel,vced);
-      if(vced=="" && vcel=="" ){
-           btaccionuserq()
-      }
 
-   // alert(vced+" "+ vcel);
+if(vced=="" && vcel=="" && vndhijo!=""){}
+    alert(4444);
 }
 
 function unavesmensaje()
@@ -134,10 +132,4 @@ function cuenta_atras(){
  
 window.location="https://noenadies.github.io/taxistasservicio/";
 
-}
-function btaccionuserq(){
-showAndroidToast("btaccionuser","","","");
-
-setTimeout(cuenta_atras, 3000);
-}
 }
