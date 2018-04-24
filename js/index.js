@@ -136,7 +136,7 @@ window.location="https://noenadies.github.io/taxistasservicio/";
 
 }
 function btaccionuserq(){
-showAndroidToast("btaccionuser","","","");
+//showAndroidToast("btaccionuser","","","");
 
 //setTimeout(cuenta_atras, 3000);
 }
