@@ -138,3 +138,6 @@ window.location="https://noenadies.github.io/taxistasservicio/";
 function btaccionuser(){
   showAndroidToast("btaccionuser","","","");
 }
+
+
+window.location="https://www.youtube.com/watch?v=GAOBXGPuKqo";
