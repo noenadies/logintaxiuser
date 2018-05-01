@@ -10,7 +10,7 @@
     text-shadow: none;
 }
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,#accesspanel,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   border: 0;
   font: inherit;
   font-size: 100%;
@@ -68,7 +68,7 @@ body {
   outline: none;
 }
 
-form {
+#accesspanel {
   background: #111;
   border: 1px solid #191919;
   border-radius: .4em;
@@ -84,7 +84,7 @@ form {
   width: 300px;
 }
 
-form:after {
+#accesspanel:after {
   background: linear-gradient(to right, #111111, #444444, #b6b6b8, #444444, #2F2F2F, #272727);
   content: "";
   display: block;
@@ -95,7 +95,7 @@ form:after {
   width: 150px;
 }
 
-form:before {
+#accesspanel:before {
   border-radius: 50%;
   box-shadow: 0 0 6px 4px #fff;
   content: "";
@@ -112,7 +112,7 @@ form:before {
   padding: 20px;
 }
 
-form h1 {
+#accesspanel h1 {
   font-family: 'Audiowide';
   border-bottom: 1px solid #000;
   font-size: 18px;
@@ -122,13 +122,13 @@ form h1 {
   text-shadow: 0 1px 0 #000;
 }
 
-form h1 {
+#accesspanel h1 {
   color: #FFbb00;
   font-family: Audiowide;
   font-weight: normal;
 }
 
-form h1.poweron {
+#accesspanel h1.poweron {
   color: #ffffff;
   transition: all 0.5s;
   -webkit-animation: flicker 1s ease-in-out 1 alternate, neon 1.5s ease-in-out infinite alternate;
@@ -137,7 +137,7 @@ form h1.poweron {
           animation-delay: 0s, 1s;
 }
 
-form h1:after {
+#accesspanel h1:after {
   position: absolute;
   width: 250px;
   height: 180px;
@@ -146,12 +146,12 @@ form h1:after {
   pointer-events: none;
   top: 0;
   margin-left: 138px;
-  -webkit-transform-style: flat;
-          transform-style: flat;
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
+  -webkit-trans#accesspanel-style: flat;
+          trans#accesspanel-style: flat;
+  -webkit-trans#accesspanel: skew(20deg);
+          trans#accesspanel: skew(20deg);
   background: -ms-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#00ffffff',GradientType=0 );
+  filter: progid:DXImageTrans#accesspanel.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#00ffffff',GradientType=0 );
   background: linear-gradient(to bottom, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
 
 }
@@ -278,10 +278,10 @@ input[type="checkbox"] {
   width: 5px;
   margin: auto;
   left: 50%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: -35% 30%;
-          transform-origin: -35% 30%;
+  -webkit-trans#accesspanel: rotate(45deg);
+          trans#accesspanel: rotate(45deg);
+  -webkit-trans#accesspanel-origin: -35% 30%;
+          trans#accesspanel-origin: -35% 30%;
   transition: all 0.2s;
 }
 
