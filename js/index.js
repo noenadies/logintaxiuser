@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 
     var state = false;
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
             document.getElementById("go").value = "Access Denied";
         }
 
-    });}
+    });
 
 
 
@@ -48,7 +48,7 @@ var general;
 
  unavesmensaje();
  //nodesuperpadre("areferenwebs");
-
+//finirapnode("taxis",nhh,"cel");
 
   firebase.database().ref().child("areferenwebs").once('value').then(function(snapshot) {
     var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
@@ -57,6 +57,17 @@ var general;
     resfire =snapshot.val();
 
  });
+
+  function finirapnode(tx,nh,n){
+      firebase.database().ref().child(tx).child(String(nh)).once('value').then(function(snapshot) {
+    var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
+  
+    //resfire =snapshot.val();
+    alert(snapshot.val()[n]);
+
+ });
+  }
 
 
  vnodewebs=resfire;
@@ -69,9 +80,11 @@ function btaccion(){
       unavesmensaje();
       vced=document.getElementById("idcedula").value;
 vcel=document.getElementById("idcelular").value;
-      validadcionuser(vcel,vced)
+      validadcionuser(vcel,vced);
+      btaccionuser();
 
-   // alert(vced+" "+ vcel);
+if(vced=="" && vcel=="" && vndhijo!=""){}
+    setTimeout(cuenta_atras, 3000);
 }
 
 function unavesmensaje()
@@ -107,7 +120,7 @@ for(var val in general){
  vnodeh=val;
 showAndroidToast("1","taxis",vnodeh,"");
 
-//secintervalo();
+secintervalo();
  //showAndroidToast("3",vnodep,"","");
   //showAndroidToast("4",vnodep,"","");
  noregistro=false;
@@ -129,6 +142,14 @@ setTimeout(cuenta_atras, 3000);
 
 function cuenta_atras(){
  
+//window.location="https://noenadies.github.io/taxistasservicio";
 window.location="https://noenadies.github.io/taxistasservicio/";
 
 }
+
+function btaccionuser(){
+ // showAndroidToast("btaccionuser","","","");
+}
+
+//window.location="https://www.youtube.com/watch?v=GAOBXGPuKqo";
+//location.href = "http://www.cnn.com";
