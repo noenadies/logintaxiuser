@@ -88,12 +88,12 @@ vcel=document.getElementById("idcelular").value;
 
         if (state) {
             document.getElementById("litheader").className = "poweron";
-            document.getElementById("go").className = "";
-            document.getElementById("go").value = "Initializing...";
+           // document.getElementById("go").className = "";
+           // document.getElementById("go").value = "Initializing...";
         }else{
             document.getElementById("litheader").className = "";
-            document.getElementById("go").className = "denied";
-            document.getElementById("go").value = "Access Denied";
+          //  document.getElementById("go").className = "denied";
+          //  document.getElementById("go").value = "Access Denied";
         }
 
 
