@@ -10,8 +10,6 @@
       <link rel="stylesheet" href="css/style.css">
 
   
-
-  <script type="text/javascript"></script>
 </head>
 
 <body>
@@ -20,7 +18,7 @@
   <div class="background"></div>
 </div>
 
-<form id="accesspanel" >
+<form id="accesspanel">
   <h1 id="litheader">AECEND</h1>
   <div class="inset">
     <p>
@@ -37,13 +35,14 @@
       <label id ="idlabel" for="remember">Remember me for 14 days</label>
       <label id ="idlabel2" for="remember">Remember me for 14 days</label>
     </div>
-    <input class="loginLoginValue" type="hidden" name="service" value="login" />aaaaaaa
+    <input class="loginLoginValue" type="hidden" name="service" value="login" />
   </div>
   <p class="p-container">
-    <button onclick="btaccion()">Click me</button><br>
+    <button id="idbt" onclick="btaccion()">Click me</button><br>
     <input type="submit" name="Login" id="go" value="Authorize" onclick="btaccion()">
 </form>
-  <script src='jquery-3.3.1.min.js'></script>
+<button id="idbt" onclick="btaccion()">Click me</button>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 
   <script>
@@ -59,12 +58,12 @@ var vndhijo="";
     vndhijo=st3;
      // vreturn=st2;
     //alert("padre "+st2);
-/*if(vid=="1"){vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);}
+if(vid=="1"){vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);}
   if(vid=="btaccionuser"){vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);document.getElementById("idlabel").innerHTML = vreturn;
 vndhijo=vreturn;}
 
 if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
- document.getElementById("idlabel2").innerHTML = vreturn;}*/
+ document.getElementById("idlabel2").innerHTML = vreturn;}
 }
    </script>
 
