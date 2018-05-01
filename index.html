@@ -11,16 +11,9 @@
 
   
 
+  <script type="text/javascript"></script>
 </head>
-  <script type="text/javascript">
-    
 
-    
-
-    window.onlad=function (){
-     llamarokya();
-    }
-  </script>
 <body>
 
   <div class="background-wrap">
@@ -52,11 +45,26 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 
-
-
-
   <script>
   
+var vreturn="";
+var vid="1";
+var vndpadre="";
+var vndhijo="";
+   function showAndroidToast(st1,st2,st3,st4) {
+
+    vid=st1;
+    vndpadre=st2;
+    vndhijo=st3;
+     // vreturn=st2;
+    //alert("padre "+st2);
+/*if(vid=="1"){vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);}
+  if(vid=="btaccionuser"){vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);document.getElementById("idlabel").innerHTML = vreturn;
+vndhijo=vreturn;}
+
+if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
+ document.getElementById("idlabel2").innerHTML = vreturn;}*/
+}
    </script>
 
     <script  src="js/index.js"></script>
