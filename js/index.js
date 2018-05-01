@@ -8,12 +8,14 @@
 
         e.preventDefault();
 
-        state = !state;
+       // state = !state;
 
         if (state) {
             document.getElementById("litheader").className = "poweron";
             document.getElementById("go").className = "";
             document.getElementById("go").value = "Initializing...";
+            setTimeout(cuenta_atras, 3000);
+
         }else{
             document.getElementById("litheader").className = "";
             document.getElementById("go").className = "denied";
