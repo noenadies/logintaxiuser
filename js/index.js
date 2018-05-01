@@ -5,10 +5,10 @@
     //$("input:text:visible:first").focus();
 
     $('#accesspanel').on('submit', function(e) {
+alert("elboton");
+      //  e.preventDefault();
 
-        e.preventDefault();
-
-       // state = !state;
+        state = !state;
 
         if (state) {
             document.getElementById("litheader").className = "poweron";
