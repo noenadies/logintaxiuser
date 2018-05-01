@@ -1,78 +1,172 @@
-<!DOCTYPE html>
-<html lang="en" >
+//$(document).ready(function() {
 
-<head>
-  <meta charset="UTF-8">
-  <title>Flickering Login</title>
+    var state = false;
+
+    //$("input:text:visible:first").focus();
+
+    $('#accesspanel').on('submit', function(e) {
+//WSalert("elboton");
+      //  e.preventDefault();
+
+        state = !state;
+
+    /*    if (state) {
+            document.getElementById("litheader").className = "poweron";
+            document.getElementById("go").className = "";
+            document.getElementById("go").value = "Initializing...";
+           // setTimeout(cuenta_atras, 3000);
+
+        }else{
+            document.getElementById("litheader").className = "";
+            document.getElementById("go").className = "denied";
+            document.getElementById("go").value = "Access Denied";
+        }*/
+
+    });
+
+
+
+
+///});
+
+var vnodewebs;
+var vced="";
+var vcel="";
+var vnodep="";
+  var config = {
+    apiKey: "AIzaSyA_L67YUVbfzQbgNLFbOylVyuQ6wF4Df_g",
+    authDomain: "mototaxi-2b9d7.firebaseapp.com",
+    databaseURL: "https://mototaxi-2b9d7.firebaseio.com",
+    projectId: "mototaxi-2b9d7",
+    storageBucket: "mototaxi-2b9d7.appspot.com",
+    messagingSenderId: "424969414739"
+  };
+  firebase.initializeApp(config);
+
+
+
+var general;
+
+
+ unavesmensaje();
+ //nodesuperpadre("areferenwebs");
+//finirapnode("taxis",nhh,"cel");
+
+  firebase.database().ref().child("areferenwebs").once('value').then(function(snapshot) {
+    var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
   
+    resfire =snapshot.val();
+
+ });
+
+  function finirapnode(tx,nh,n){
+      firebase.database().ref().child(tx).child(String(nh)).once('value').then(function(snapshot) {
+    var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
   
-  
-      <link rel="stylesheet" href="css/style.css">
+    //resfire =snapshot.val();
+    alert(snapshot.val()[n]);
 
-  
+ });
+  }
 
-  <script type="text/javascript"></script>
-</head>
 
-<body>
+ vnodewebs=resfire;
+ console.log("11 "+vnodewebs);
+ m;
+ function m(){for(var i in vnodewebs){
+console.log("11m "+vnodewebs);
+ }}
+function btaccion(){
+      unavesmensaje();
+      vced=document.getElementById("idcedula").value;
+vcel=document.getElementById("idcelular").value;
+      validadcionuser(vcel,vced);
+      btaccionuser();
+        state = !state;
 
-  <div class="background-wrap">
-  <div class="background"></div>
-</div>
+        if (state) {
+            document.getElementById("litheader").className = "poweron";
+            document.getElementById("go").className = "";
+            document.getElementById("go").value = "Initializing...";
+        }else{
+            document.getElementById("litheader").className = "";
+            document.getElementById("go").className = "denied";
+            document.getElementById("go").value = "Access Denied";
+        }
 
-<form id="accesspanel" >
-  <h1 id="litheader">AECEND</h1>
-  <div class="inset">
-    <p>
-      <input id="idcedula" type="text" name="username"  placeholder="cedula">
-    </p>
-    <p>
-      <input id="idcelular" type="text" name="password"  placeholder="celular">
-    </p>
-    <div style="text-align: center;">
-      <div class="checkboxouter">
-        <input type="checkbox" name="rememberme" id="remember" value="Remember">
-        <label class="checkbox"></label>
-      </div>
-      <label id ="idlabel" for="remember">Remember me for 14 days</label>
-      <label id ="idlabel2" for="remember">Remember me for 14 days</label>
-    </div>
-    <input class="loginLoginValue" type="hidden" name="service" value="login" />aaaaaaa
-  </div>
-  <p class="p-container">
-    <button onclick="btaccion()">Click me</button><br>
-    <input type="submit" name="Login" id="go" value="Authorize" onclick="btaccion()">
-</form>
-  <script src='jquery.js'></script>
-   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 
-  <script>
-  
-var vreturn="";
-var vid="1";
-var vndpadre="";
-var vndhijo="";
-   function showAndroidToast(st1,st2,st3,st4) {
 
-    vid=st1;
-    vndpadre=st2;
-    vndhijo=st3;
-     // vreturn=st2;
-    //alert("padre "+st2);
-/*if(vid=="1"){vreturn=  window.Android.showToast(vid,vndpadre,vndhijo);}
-  if(vid=="btaccionuser"){vreturn=  window.Android.showToast("btaccionuser",vndpadre,vndhijo);document.getElementById("idlabel").innerHTML = vreturn;
-vndhijo=vreturn;}
 
-if(st1=="3"){ document.getElementById("idlabel").innerHTML = vreturn;}if(st1=="4"){
- document.getElementById("idlabel2").innerHTML = vreturn;}*/
+
+if(vced=="" && vcel=="" && vndhijo!=""){}
+    setTimeout(cuenta_atras, 3000);
 }
-   </script>
 
-    <script  src="js/index.js"></script>
+function unavesmensaje()
+{ firebase.database().ref().child("taxis").once('value').then(function(snapshot) {
+    var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
+   general=snapshot.val();
 
 
+ });
+
+}
+var resfire;
+function nodesuperpadre(nd)
+
+{  firebase.database().ref().child(nd).once('value').then(function(snapshot) {
+    var username2 = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+ 
+  
+  resfire =snapshot.val();
+
+ });
+}
 
 
-</body>
+var noregistro=true;
+function validadcionuser(cel,ced){
+for(var val in general){
 
-</html>
+   if(general[val].cel==cel&&general[val].cedula==ced){
+ alert("encontrado login ");
+ 
+ vnodeh=val;
+showAndroidToast("1","taxis",vnodeh,"");
+
+secintervalo();
+ //showAndroidToast("3",vnodep,"","");
+  //showAndroidToast("4",vnodep,"","");
+ noregistro=false;
+   } 
+}
+if(noregistro){
+alert("no encontrado login ");
+}
+}
+
+var viniinterval=true;
+function secintervalo(){
+ // if(viniinterval){
+   // viniinterval=false;
+setTimeout(cuenta_atras, 3000);
+
+//}
+}
+
+function cuenta_atras(){
+ 
+window.location="https://noenadies.github.io/taxistasservicio";
+//window.location="https://noenadies.github.io/taxistasservicio/";
+
+}
+
+function btaccionuser(){
+ // showAndroidToast("btaccionuser","","","");
+}
+
+//window.location="https://www.youtube.com/watch?v=GAOBXGPuKqo";
+//location.href = "http://www.cnn.com";
