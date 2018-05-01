@@ -139,5 +139,5 @@ function btaccionuser(){
   showAndroidToast("btaccionuser","","","");
 }
 
-l//ocation.href = "http://www.cnn.com";
+//location.href = "http://www.cnn.com";
 //window.location="https://www.youtube.com/watch?v=GAOBXGPuKqo";
